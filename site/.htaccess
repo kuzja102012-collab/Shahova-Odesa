@@ -1,0 +1,89 @@
+# Шахова Одеса — налаштування сервера (LiteSpeed / Apache).
+# Лежить у кореневій теці хостингу поруч з index.html.
+# Файл збережено в UTF-8: кириличні адреси нижче мають лишатися як є.
+
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Завжди https і без www
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# 1а. Службові файли редактора (пароль, резервні копії) — недоступні ззовні
+RewriteRule ^(publish-config\.php|_private(/.*)?)$ - [F,L]
+
+# 2. Сторінки старого сайту (WordPress) → розділи й матеріали нового
+RewriteRule ^новости/?$ /#/news [R=301,L,NE]
+RewriteRule ^архів-новин/?$ /#/news [R=301,L,NE]
+RewriteRule ^турніри/?$ /#/tournaments [R=301,L,NE]
+RewriteRule ^план-спортивно-массовых-мероприятий/?$ /#/tournaments [R=301,L,NE]
+RewriteRule ^контакты/?$ /#/contacts [R=301,L,NE]
+RewriteRule ^турниры/?$ /#/news/n-2023-geller [R=301,L,NE]
+RewriteRule ^регламент/?$ /#/news/n-2023-geller [R=301,L,NE]
+RewriteRule ^championship-of-odessa-region-2020-blitz/?$ /#/news/n-2020-champ-blitz [R=301,L,NE]
+RewriteRule ^100th-anniversary-of-e-kogan-blitz/?$ /#/news/n-2020-kogan [R=301,L,NE]
+RewriteRule ^Галерея/?$ / [R=301,L,NE]
+RewriteRule ^запись/?$ / [R=301,L,NE]
+RewriteRule ^тестовая-запись/?$ / [R=301,L,NE]
+RewriteRule ^category/uncategorized/?$ / [R=301,L,NE]
+
+# 3а. Файли старого сайту з кириличними назвами → перейменовані копії в assets/ (31)
+RewriteRule ^wp-content/uploads/2020/04/букет-2(-\d+x\d+)?\.jpg$ /assets/photos/2020-04/buket-2.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/Л02(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l02.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л03(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l03.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л04(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l04.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л05(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l05.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л06(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l06.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л07(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l07.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л08(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l08.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л09(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l09.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л10(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l10.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2020/06/л11(-\d+x\d+)?\.jpg$ /assets/photos/2020-06/l11.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2021/11/мороз(-\d+x\d+)?\.jpg$ /assets/photos/2021-11/moroz.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2022/01/Взглядов(-\d+x\d+)?\.jpg$ /assets/photos/2022-01/vzhliadov.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2022/01/Кузнецов(-\d+x\d+)?\.jpg$ /assets/photos/2022-01/kuznetsov.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/08/таблица(-\d+x\d+)?\.jpg$ /assets/scans/2023-08/tablytsa.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/3-тур(-\d+x\d+)?\.jpg$ /assets/scans/2023-11/3-tur.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/4-тур(-\d+x\d+)?\.jpg$ /assets/scans/2023-11/4-tur.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/рейтинг-после-2-тура(-\d+x\d+)?\.jpg$ /assets/scans/2023-11/reitynh-posle-2-tura.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/рейтинг-после-3-тура(-\d+x\d+)?\.jpg$ /assets/scans/2023-11/reitynh-posle-3-tura.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/с02(-\d+x\d+)?\.jpg$ /assets/photos/2023-11/s02.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/11/с4(-\d+x\d+)?\.jpg$ /assets/photos/2023-11/s4.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/12/Фінал-до-20(-\d+x\d+)?\.jpg$ /assets/scans/2023-12/final-do-20.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2023/12/Фінал-до-20_01(-\d+x\d+)?\.jpg$ /assets/scans/2023-12/final-do-20_01.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2024/02/Регламент-чемпіонату-Одеської-області-з-шахів(-\d+x\d+)?\.pdf$ /assets/docs/2024-02/reglament-chempionatu-odeskoi-oblasti-z-shakhiv.pdf [R=301,L]
+RewriteRule ^wp-content/uploads/2024/02/чоо-10-1(-\d+x\d+)?\.jpg$ /assets/scans/2024-02/choo-10-1.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2024/02/чоо-10-2(-\d+x\d+)?\.jpg$ /assets/scans/2024-02/choo-10-2.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2024/02/чоо-12-1(-\d+x\d+)?\.jpg$ /assets/scans/2024-02/choo-12-1.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2024/02/чоо-12-2(-\d+x\d+)?\.jpg$ /assets/scans/2024-02/choo-12-2.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2024/06/Рапид(-\d+x\d+)?\.jpg$ /assets/scans/2024-06/rapyd.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2026/07/Блиц_01_cr(-\d+x\d+)?\.jpg$ /assets/scans/2026-07/blyts_01_cr.jpg [R=301,L]
+RewriteRule ^wp-content/uploads/2026/08/Регламент-scaled(-\d+x\d+)?\.jpg$ /assets/docs/2026-08/reglament.jpg [R=301,L]
+
+# 3б. Решта файлів старого сайту: та сама назва в assets/photos|scans|docs/РРРР-ММ/
+#     (зокрема зменшені копії WordPress на кшталт «-300x200»)
+RewriteCond %{DOCUMENT_ROOT}/assets/photos/$1-$2/$3.$5 -f
+RewriteRule ^wp-content/uploads/(\d{4})/(\d{2})/(.+?)(-\d+x\d+)?\.(jpe?g|png|gif)$ /assets/photos/$1-$2/$3.$5 [R=301,L]
+RewriteCond %{DOCUMENT_ROOT}/assets/scans/$1-$2/$3.$5 -f
+RewriteRule ^wp-content/uploads/(\d{4})/(\d{2})/(.+?)(-\d+x\d+)?\.(jpe?g|png|gif)$ /assets/scans/$1-$2/$3.$5 [R=301,L]
+RewriteCond %{DOCUMENT_ROOT}/assets/docs/$1-$2/$3 -f
+RewriteRule ^wp-content/uploads/(\d{4})/(\d{2})/(.+)$ /assets/docs/$1-$2/$3 [R=301,L]
+
+# 4. Будь-яка інша адреса, якої немає на новому сайті → головна
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteRule ^ / [R=302,L]
+</IfModule>
+
+# Після публікації з редактора браузер має одразу бачити нову версію
+<IfModule mod_headers.c>
+<FilesMatch "^(index\.html|site-data\.json)$">
+Header set Cache-Control "no-cache"
+</FilesMatch>
+</IfModule>

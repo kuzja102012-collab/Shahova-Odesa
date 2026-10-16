@@ -1,0 +1,7 @@
+.env*
+node_modules/
+.venv/
+site/publish-config.php
+site/_private/
+migration/fidecheck/fide-extra.json
+*.zip

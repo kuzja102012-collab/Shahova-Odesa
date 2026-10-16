@@ -1,0 +1,77 @@
+
+======== БЛОК 0
+No. PNo. Name Score WP SB PS rat. TPR W-We
+-------------------------------------------------------------------------------
+1. 4 Baidetskyi, Valentin 7.5 52.0 42.25 39.5 2367 2491 +1.29
+12 Kukelko, Alexey 7.5 48.5 39.50 37.0 2201 2477 +3.18
+3. 9 Sodol, Georgiy 7.0 49.5 37.50 36.0 2245 2289 +0.80
+18 Telitsin, Oleksandr 7.0 46.0 33.00 34.0 2085 2229 +1.79
+10 Churavin, Andrey 7.0 45.5 34.50 33.5 2217 2265 +0.74
+6. 6 Fingerov, Dmitry 6.5 53.0 35.50 37.0 2324 2338 +0.48
+3 Yurovskykh, Oleksandr 6.5 52.0 35.75 35.0 2386 2398 +0.35
+14 Gorbunov, Igor 6.5 47.5 32.00 30.0 2192 2251 +0.85
+9. 5 Reshetkov, Kirill 6.0 55.5 34.50 37.0 2352 2311 -0.17
+2 Borsuk, Konstantin 6.0 49.5 29.00 32.0 2429 2271 -1.35
+20 Taranenko, Evgueniy 6.0 45.0 25.75 30.5 2051 2104 +0.87
+11 Shevchenko, Danylo 6.0 43.5 25.50 32.0 2213 2092 -0.97
+15 Aliferenko, Aleksei 6.0 43.0 26.50 30.0 2154 2050 -0.79
+16 Goroshkov, Maksym 6.0 42.0 25.50 29.0 2097 2046 -0.34
+7 Snigurov, Maxim 6.0 38.5 25.00 27.0 2310 2096 -1.75
+16. 1 Kovalev, Denis 5.5 54.0 30.75 33.5 2505 2296 -1.97
+8 Molchanov, Oleksii 5.5 52.5 30.00 34.0 2308 2300 +0.12
+13 Lymar, Vladislav 5.5 48.5 27.00 31.5 2197 2126 -0.50
+22 Dovzhenko, Viktor 5.5 46.0 24.75 28.0 2036 2071 +0.54
+19 Topchij, Gennadij 5.5 41.0 24.25 28.0 2053 1924 -1.18
+17 Stets, Vasilij 5.5 38.0 21.00 24.0 2086 1865 -2.03
+22. 37 Bernatskiy, Alexander 5.0 48.5 24.00 30.0 1831 2061 +2.36
+21 Chayka, Vitaly 5.0 47.5 23.50 28.5 2045 2066 +0.36
+28 Eyvazli, Ilkin 5.0 47.0 23.50 27.0 1923 2039 +1.20
+24 Makarov, Pavlo 5.0 46.0 22.00 28.0 2024 2054 +0.32
+30 Tobak, Mikhail 5.0 45.5 22.00 27.0 1894 2031 +1.51
+40 Ivasenko, Andrey 5.0 44.0 21.50 23.0 1802 1929 +1.38
+25 Domalchuk-Jonasson, Aleksa 5.0 42.5 20.00 27.0 2013 1918 -0.84
+41 Apostolakii, Olga 5.0 39.0 19.00 21.0 1776 1828 +0.66
+36 Molchanov, Maxim 5.0 38.0 15.00 26.0 1866 1819 -0.36
+42 Pampushka, Nikita 5.0 38.0 17.50 21.0 1765 1789 +0.43
+33 Chetverik, Alexander 5.0 37.5 17.50 25.0 1886 1710 -1.61
+50 Radyan, Oleksiy 5.0 37.0 15.50 23.0 1685 1758 +0.50
+60 Chekhani, Anna 5.0 36.5 16.00 19.0 1421 1702 +2.42
+46 Breslavets, Vladimir 5.0 29.5 13.50 18.0 1717 1613 -0.90
+36. 27 Khachyk, Anton 4.5 44.5 19.25 25.0 1942 1880 -0.47
+23 Dmitriev, Sergey 4.5 42.0 17.75 22.5 2033 1837 -1.94
+44 Lodotchnikow, Olexandr 4.5 41.5 17.75 22.0 1737 1822 +0.94
+34 Kharchenko, Michail 4.5 40.0 14.50 23.5 1886 1786 -0.90
+45 Lisin, Oleh 4.5 37.0 14.25 19.5 1733 1825 +1.07
+41. 53 Russeva, Viktoria 4.0 46.0 18.75 24.5 1619 1916 +2.89
+49 Kuzhilniy, Oleksandr 4.0 45.5 18.00 25.5 1690 1963 +2.68
+32 Tropin, Vladimir 4.0 41.5 15.00 24.0 1892 1829 -0.75
+31 Konfendrat, Vladimir 4.0 41.5 12.00 23.0 1893 1753 -1.48
+54 Belotserkovsky, Evgeny 4.0 41.5 15.00 18.0 1563 1700 +1.09
+39 Kurganov, Grigoriy 4.0 40.0 11.50 20.0 1804 1657 -1.61
+29 Borodavkin, Anatoly 4.0 38.0 13.00 21.5 1894 1658 -2.43
+35 Varanitsa, Yuru 4.0 37.5 14.50 20.0 1870 1725 -1.35
+63 Kholodnykh, Kyrylo 4.0 34.0 12.00 14.0 1367 1506 +1.00
+56 Burlachenko, Oleksiy 4.0 33.0 9.00 18.0 1550 1638 +0.96
+72 Kholodzinskiy, German 4.0 32.0 11.00 15.0 0000 1578 1578
+66 Lodochnikov, Andriy 4.0 30.5 9.50 15.0 1349 1595 +2.45
+64 Apostolakii, Irina 4.0 28.5 10.50 11.5 1363 1568 +2.00
+54. 26 Grabovsky, Sergey 3.5 45.5 13.75 23.0 1945 1797 -1.80
+48 Bokhnak, Timofey 3.5 38.0 11.75 18.0 1695 1695 -0.14
+65 Kurganova, Anna 3.5 35.0 13.00 15.0 1354 1502 +0.97
+55 Prikhojenko, Sergey 3.5 34.0 9.50 14.5 1559 1550 -0.49
+38 Savon, Vladimir 3.5 32.0 10.00 12.5 1806 1556 -2.66
+59. 67 Sahakyan, Aram 3.0 41.0 11.50 17.0 1335 1518 +1.46
+43 Gribkov, Sergey 3.0 40.0 11.00 16.0 1761 1753 -0.36
+70 Liakhov, Leonid 3.0 37.5 7.50 10.0 1145 1215 +0.34
+61 Alforova, Zlata 3.0 37.0 12.50 18.0 1412 1680 +2.12
+51 Morchadze, Lolita 3.0 35.0 8.00 16.0 1643 1496 -1.79
+59 Shevchuk, Yuriy 3.0 33.0 6.00 15.0 1449 1498 +0.13
+57 Hryhorieva, Anna 3.0 33.0 9.00 12.0 1522 1313 -1.56
+62 Russeva, Mariia 3.0 27.0 6.50 11.0 1369 1443 +0.36
+67. 47 Konfendrat, Nikolai 2.5 36.0 8.00 13.5 1708 1380 -3.29
+73 Kurganova, Maria 2.5 32.0 5.25 10.5 0000 1326 1326
+71 Kholodzinskiy, Genrikh 2.5 30.5 6.50 13.5 0000 1438 1438
+58 Apostolakii, Sveta 2.5 27.5 3.50 6.5 1504 1263 -2.19
+71. 68 Ryzhuk, Ekaterina 2.0 35.5 8.00 13.0 1242 1279 +0.11
+52 Bormotov, Andrii 2.0 35.0 4.50 9.0 1639 1378 -2.18
+73. 69 Rudenko, Vadym 1.5 29.5 3.50 7.5 1229 1115 -0.57
