@@ -21,8 +21,7 @@ function heroHtml(){
     '<p>Новини, турніри, результати й чемпіони шахового життя Одеси та області.</p>'+
     '<div class="cta"><a class="btn gold" href="#/tournaments">'+esc(next)+'</a>'+
     '<a class="btn ghost" href="#/news">Новини</a><a class="btn ghost" href="#/tournaments?tab=champions">Зала чемпіонів</a></div></div></div>'+
-    '<p class="hero-credit">Фото: <a href="'+HERO_BG.page+'" target="_blank" rel="noopener">'+esc(HERO_BG.author)+'</a>, '+
-    '<a href="'+HERO_BG.licenseUrl+'" target="_blank" rel="noopener">'+esc(HERO_BG.license)+'</a>, Wikimedia Commons</p></section>';
+    '</section>';
 }
 `;
 {
@@ -51,13 +50,11 @@ function heroHtml(){
 .hero-photo .hero-in{grid-template-columns:minmax(0,660px);padding-top:56px;padding-bottom:92px}
 .hero-photo h1{text-shadow:0 2px 26px rgba(5,20,14,.5)}
 .hero-photo .hero-in p{color:#E6EEE8;text-shadow:0 1px 14px rgba(5,20,14,.55)}
-.hero .hero-credit{position:absolute;right:16px;bottom:10px;z-index:1;margin:0;max-width:none;font-size:11px;color:rgba(244,238,226,.66)}
-.hero-credit a{color:inherit;text-decoration:underline;text-decoration-color:rgba(244,238,226,.35);text-underline-offset:2px}
-.hero-credit a:hover{color:var(--gold)}
+
 .hero-photo .btn.ghost{background:rgba(10,32,24,.38);border-color:rgba(244,238,226,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .hero-photo .btn.ghost:hover{background:rgba(10,32,24,.55)}
 @media(max-width:860px){ .hero-photo{min-height:min(88vh,720px)} .hero-photo .hero-in{grid-template-columns:1fr;padding-bottom:110px}
-  .hero .hero-credit{left:16px;right:16px;text-align:right} }
+}
 `;
   const M = '/* перший екран зі справжнім фото */';
   if (html.includes(M)) { const a = html.indexOf(M), b = html.indexOf("/* сузір'я «Кінь» у підвалі */", a); html = html.slice(0, a) + CSS + html.slice(b); }

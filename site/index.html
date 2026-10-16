@@ -444,6 +444,9 @@ footer h4{color:var(--gold);letter-spacing:.06em}
 footer a{color:var(--ivory-2)}
 footer a:hover{color:var(--gold)}
 footer .brand b{color:var(--ivory)}
+.photo-attribution{font-size:12px;line-height:1.6;margin:12px 0 0;color:var(--ivory-2)}
+.photo-attribution a{display:inline;padding:0;font-size:inherit;color:inherit;text-decoration:underline;text-underline-offset:2px}
+.photo-attribution a:hover{color:var(--gold)}
 .f-bot{border-top-color:rgba(244,238,226,.12);color:var(--ivory-2)}
 @media(max-width:860px){
   .hero-in{grid-template-columns:1fr;gap:30px;padding-top:44px;padding-bottom:26px}
@@ -508,13 +511,11 @@ a.card:hover{transform:translateY(-4px)}
 .hero-photo .hero-in{grid-template-columns:minmax(0,660px);padding-top:56px;padding-bottom:92px}
 .hero-photo h1{text-shadow:0 2px 26px rgba(5,20,14,.5)}
 .hero-photo .hero-in p{color:#E6EEE8;text-shadow:0 1px 14px rgba(5,20,14,.55)}
-.hero .hero-credit{position:absolute;right:16px;bottom:10px;z-index:1;margin:0;max-width:none;font-size:11px;color:rgba(244,238,226,.66)}
-.hero-credit a{color:inherit;text-decoration:underline;text-decoration-color:rgba(244,238,226,.35);text-underline-offset:2px}
-.hero-credit a:hover{color:var(--gold)}
+
 .hero-photo .btn.ghost{background:rgba(10,32,24,.38);border-color:rgba(244,238,226,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .hero-photo .btn.ghost:hover{background:rgba(10,32,24,.55)}
 @media(max-width:860px){ .hero-photo{min-height:min(88vh,720px)} .hero-photo .hero-in{grid-template-columns:1fr;padding-bottom:110px}
-  .hero .hero-credit{left:16px;right:16px;text-align:right} }
+}
 /* сузір'я «Кінь» у підвалі */
 footer.has-sky{position:relative;overflow:hidden}
 footer.has-sky>.wrap{position:relative;z-index:1}
@@ -608,6 +609,7 @@ table.ctbl td:hover .cr,.titles a:hover .cr{transform:scale(1.4) rotate(-10deg);
     </div>
   </div>
   <div class="f-bot"><span id="fYear"></span><span>м. Одеса, вул. Канатна, 95</span></div>
+  <p class="photo-attribution">Фото головної сторінки: <a href="https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0_-_panoramio_(17).jpg" target="_blank" rel="noopener noreferrer">Andris Malygin</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> · Wikimedia Commons</p>
 </div></footer>
 
 <script>
@@ -10833,8 +10835,7 @@ function heroHtml(){
     '<p>Новини, турніри, результати й чемпіони шахового життя Одеси та області.</p>'+
     '<div class="cta"><a class="btn gold" href="#/tournaments">'+esc(next)+'</a>'+
     '<a class="btn ghost" href="#/news">Новини</a><a class="btn ghost" href="#/tournaments?tab=champions">Зала чемпіонів</a></div></div></div>'+
-    '<p class="hero-credit">Фото: <a href="'+HERO_BG.page+'" target="_blank" rel="noopener">'+esc(HERO_BG.author)+'</a>, '+
-    '<a href="'+HERO_BG.licenseUrl+'" target="_blank" rel="noopener">'+esc(HERO_BG.license)+'</a>, Wikimedia Commons</p></section>';
+    '</section>';
 }
 function vHome(){
   const news=newsSorted().slice(0,6);
